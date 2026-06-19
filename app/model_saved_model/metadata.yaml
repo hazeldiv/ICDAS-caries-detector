@@ -1,0 +1,29 @@
+description: Ultralytics YOLO26n model trained on /kaggle/working/preprocessed/data.yaml
+author: Ultralytics
+date: '2026-06-18T15:08:29.607790'
+version: 8.4.70
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: D0-Sound
+  1: D1-Faint-Enamel
+  2: D2-Distinct-Enamel
+  3: D3-Enamel-Breakdown
+  4: D4-Dentinal-Shadow
+  5: D5-Distinct-Cavity
+  6: D6-Extensive-Cavity
+args:
+  data: null
+  batch: 1
+  fraction: 1.0
+  half: false
+  int8: false
+  nms: false
+channels: 3
+end2end: true
