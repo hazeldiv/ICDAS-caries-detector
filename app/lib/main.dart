@@ -724,6 +724,18 @@ class _CariesDetectorHomePageState extends State<CariesDetectorHomePage>
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
                             _buildInfoStat(
+                              'Inference',
+                              '${_inferenceTimeMs}ms',
+                              Icons.timer_outlined,
+                              const Color(0xFF10B981),
+                            ),
+                            _buildInfoStat(
+                              'FPS',
+                              _fps.toStringAsFixed(1),
+                              Icons.speed_outlined,
+                              const Color(0xFF10B981),
+                            ),
+                            _buildInfoStat(
                               'Detections',
                               '${_detections.length}',
                               Icons.visibility_outlined,
